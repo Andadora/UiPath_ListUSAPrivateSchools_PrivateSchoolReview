@@ -1,0 +1,14 @@
+﻿{
+  "Id": "54viNQvhdUOiUtkv5ye1ZQ",
+  "Reference": "fSZ1Bla1BUSPYj84lfkH5w/54viNQvhdUOiUtkv5ye1ZQ",
+  "ParentRef": "fSZ1Bla1BUSPYj84lfkH5w/HCpbn71kIEiGEmVxBVn5kw",
+  "Name": "Extract States Data from Column 2",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2022-12-11T12:49:58.7088797Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-11T12:49:58.7088797Z"
+}

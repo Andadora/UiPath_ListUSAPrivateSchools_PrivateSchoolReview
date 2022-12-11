@@ -1,0 +1,15 @@
+﻿{
+  "Id": "Xm6TJdhij0qmETCEta-mAQ",
+  "Reference": "fSZ1Bla1BUSPYj84lfkH5w/Xm6TJdhij0qmETCEta-mAQ",
+  "Name": "PrivateSchoolReview_Edge",
+  "Description": "privateschoolreview.com",
+  "Type": "App",
+  "Created": "2022-12-11T12:49:58.6509012Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-11T12:49:58.6509012Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

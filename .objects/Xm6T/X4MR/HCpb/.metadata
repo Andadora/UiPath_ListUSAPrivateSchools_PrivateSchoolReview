@@ -1,0 +1,17 @@
+﻿{
+  "Id": "HCpbn71kIEiGEmVxBVn5kw",
+  "Reference": "fSZ1Bla1BUSPYj84lfkH5w/HCpbn71kIEiGEmVxBVn5kw",
+  "ParentRef": "fSZ1Bla1BUSPYj84lfkH5w/X4MRTvfjYEWSN03SkEJv-w",
+  "Name": "Home Screen",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2022-12-11T12:49:58.6790196Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-11T12:56:11.9068841Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

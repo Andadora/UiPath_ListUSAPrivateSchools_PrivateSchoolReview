@@ -1,0 +1,31 @@
+{
+  "DisplayName": "Get States Data",
+  "Tooltip": "Extracts datatable of <State Name, State Url> from home page of PrivateSchoolReview website given the url of the home page.",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_PrivateSchoolReviewHomeUrl",
+      "DisplayName": "in_PrivateSchoolReviewHomeUrl",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_dt_StatesData",
+      "DisplayName": "out_dt_StatesData",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    }
+  ]
+}
