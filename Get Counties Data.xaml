@@ -1,12 +1,11 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Get_Counties_Data" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
-    <x:Property Name="in_StateName" Type="InArgument(x:String)" />
-    <x:Property Name="in_StateUrl" Type="InArgument(x:String)" />
     <x:Property Name="out_dt_CountiesData" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_PrivateSchoolReviewStateUrl" Type="InArgument(x:String)" />
   </x:Members>
+  <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1031,1664</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031,939</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
@@ -30,8 +29,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Runtime.Serialization</x:String>
@@ -114,7 +111,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get Counties Data" sap:VirtualizedContainerService.HintSize="496,1599" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get Counties Data" sap:VirtualizedContainerService.HintSize="496,874" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -139,36 +136,29 @@
         </OutArgument>
       </ui:BuildDataTable.DataTable>
     </ui:BuildDataTable>
-    <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="False" DisplayName="Use Edge: PrivateSchoolReview: State Screen" sap:VirtualizedContainerService.HintSize="434,516" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="a362d37e-95d0-41e7-9060-cf88349e807c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Edge: Private School Review: State Screen" sap:VirtualizedContainerService.HintSize="434,392" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="a5cc94ea-5d2a-4f48-abef-f021db0aa7b7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Use Edge: PrivateSchoolReview: State Screen: Do" sap:VirtualizedContainerService.HintSize="400,290" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Counties Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' Name='County Name' ReferenceName='Column0'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='County Url' ReferenceName='Column1'&gt;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a362d37e-95d0-41e7-9060-cf88349e807c" Timeout="15" Version="V3">
-              <uix:NExtractData.DataTable>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">out_dt_CountiesData</CSharpReference>
-                </InOutArgument>
-              </uix:NExtractData.DataTable>
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable ContentHash="VvHVphj6_k2i5Fz0uSmQzg" DesignTimeRectangle="367, 532, 782, 4056" DesignTimeScaleFactor="1" FriendlyName="'Extract Counties Data'" FullSelectorArgument="&lt;webctrl id='spt-school-list' tag='DIV' /&gt;" Guid="21497d18-3080-4406-bca7-86fc05002145" InformativeScreenshot="f046fa0e025e49360d59d4d806c80577.png" Reference="waKmVC1iEkO_27UpmMFivw/8MFdEvaBtEmm53CXHVIqCA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Private Schools in * - PrivateSchoolReview.com' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-          </Sequence>
+          <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Counties Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' Name='County Name' ReferenceName='Column0'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='County Url' ReferenceName='Column1'&gt;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a5cc94ea-5d2a-4f48-abef-f021db0aa7b7" Timeout="15" Version="V3">
+            <uix:NExtractData.DataTable>
+              <InOutArgument x:TypeArguments="sd:DataTable">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">out_dt_CountiesData</CSharpReference>
+              </InOutArgument>
+            </uix:NExtractData.DataTable>
+            <uix:NExtractData.Target>
+              <uix:TargetAnchorable ContentHash="VvHVphj6_k2i5Fz0uSmQzg" DesignTimeRectangle="367, 532, 782, 4056" DesignTimeScaleFactor="1" FriendlyName="'Extract Counties Data'" FullSelectorArgument="&lt;webctrl id='spt-school-list' tag='DIV' /&gt;" Guid="21497d18-3080-4406-bca7-86fc05002145" InformativeScreenshot="f046fa0e025e49360d59d4d806c80577.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/8MFdEvaBtEmm53CXHVIqCA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Private Schools in * - PrivateSchoolReview.com' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+            </uix:NExtractData.Target>
+          </uix:NExtractData>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="rfKxzx1nSEC7xoWvMUVONw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="ff21362c4021b5f58e562d39f3098951.jpg" Reference="waKmVC1iEkO_27UpmMFivw/KG7rF-z3Jkej9kdkdQdMTw" Selector="&lt;html app='msedge.exe' title='Best Private Schools in * - PrivateSchoolReview.com' /&gt;">
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="Asa3GGwWIEOOCoNW5OeZbA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="00e2081b21f2392e110087447d41833b.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/8px1sTjA-UGWPNcfJsMF8w" Selector="&lt;html app='msedge.exe' title='Best Private Schools in Georgia (2022-23)' /&gt;">
           <uix:TargetApp.Url>
             <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">in_StateUrl</CSharpValue>
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">in_PrivateSchoolReviewStateUrl</CSharpValue>
             </InArgument>
           </uix:TargetApp.Url>
         </uix:TargetApp>
@@ -177,47 +167,9 @@
     <ui:LogMessage DisplayName="Log Successful counties data extraction" sap:VirtualizedContainerService.HintSize="434,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
-          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">"Successfully extracted urls of " + out_dt_CountiesData.Rows.Count.ToString() + " Counties of state " + in_StateName + "."</CSharpValue>
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">"Successfully extracted urls of " + out_dt_CountiesData.Rows.Count.ToString() + " Counties."</CSharpValue>
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" DisplayName="Add Column State Name" sap:VirtualizedContainerService.HintSize="434,195" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" MaxLength="500">
-      <ui:AddDataColumn.Column>
-        <InArgument x:TypeArguments="sd:DataColumn">
-          <CSharpValue x:TypeArguments="sd:DataColumn" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">new System.Data.DataColumn("State Name",System.Type.GetType("System.String") )</CSharpValue>
-        </InArgument>
-      </ui:AddDataColumn.Column>
-      <ui:AddDataColumn.DataTable>
-        <InArgument x:TypeArguments="sd:DataTable">
-          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">out_dt_CountiesData</CSharpValue>
-        </InArgument>
-      </ui:AddDataColumn.DataTable>
-    </ui:AddDataColumn>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Counties Data Table set state name" sap:VirtualizedContainerService.HintSize="434,326" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-      <ui:ForEachRow.Body>
-        <ActivityAction x:TypeArguments="sd:DataRow">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-          </ActivityAction.Argument>
-          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="State Name" DisplayName="Set State Name" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="UpdateRowItem_1">
-            <ui:UpdateRowItem.Row>
-              <InArgument x:TypeArguments="sd:DataRow">
-                <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">CurrentRow</CSharpValue>
-              </InArgument>
-            </ui:UpdateRowItem.Row>
-            <ui:UpdateRowItem.Value>
-              <InArgument x:TypeArguments="x:Object">
-                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">in_StateName</CSharpValue>
-              </InArgument>
-            </ui:UpdateRowItem.Value>
-          </ui:UpdateRowItem>
-        </ActivityAction>
-      </ui:ForEachRow.Body>
-      <ui:ForEachRow.DataTable>
-        <InArgument x:TypeArguments="sd:DataTable">
-          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">out_dt_CountiesData</CSharpValue>
-        </InArgument>
-      </ui:ForEachRow.DataTable>
-    </ui:ForEachRow>
   </Sequence>
 </Activity>
