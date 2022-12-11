@@ -1,0 +1,13 @@
+﻿{
+  "Id": "vKikg_4p5EqVq7kfKShPPg",
+  "Reference": "fSZ1Bla1BUSPYj84lfkH5w/vKikg_4p5EqVq7kfKShPPg",
+  "ParentRef": "fSZ1Bla1BUSPYj84lfkH5w/dsBp5_77XEK-BoYol2uHUw",
+  "Name": "Show more schools",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2022-12-11T14:09:29.7927069Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-11T14:09:29.7927069Z"
+}

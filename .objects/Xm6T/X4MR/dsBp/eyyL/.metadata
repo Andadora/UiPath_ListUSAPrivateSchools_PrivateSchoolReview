@@ -1,0 +1,17 @@
+﻿{
+  "Id": "eyyLhaX9VUqXh-fTiKxayw",
+  "Reference": "fSZ1Bla1BUSPYj84lfkH5w/eyyLhaX9VUqXh-fTiKxayw",
+  "ParentRef": "fSZ1Bla1BUSPYj84lfkH5w/dsBp5_77XEK-BoYol2uHUw",
+  "Name": "Extract Schools Data",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2022-12-11T14:18:00.3563687Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-11T14:19:49.8462521Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

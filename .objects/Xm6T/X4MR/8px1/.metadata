@@ -2,7 +2,8 @@
   "Id": "8px1sTjA-UGWPNcfJsMF8w",
   "Reference": "fSZ1Bla1BUSPYj84lfkH5w/8px1sTjA-UGWPNcfJsMF8w",
   "ParentRef": "fSZ1Bla1BUSPYj84lfkH5w/X4MRTvfjYEWSN03SkEJv-w",
-  "Name": "State Screen 2",
+  "Name": "State Screen",
+  "Description": "Screen containing list of counties in particular state",
   "Type": "Screen",
   "TaxonomyType": "Screen",
   "Created": "2022-12-11T13:35:36.0464629Z",
@@ -10,5 +11,8 @@
     "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
   ],
-  "Updated": "2022-12-11T13:35:36.0464629Z"
+  "Updated": "2022-12-11T14:10:35.6329599Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
 }

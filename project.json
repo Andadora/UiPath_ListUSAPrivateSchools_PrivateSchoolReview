@@ -33,7 +33,9 @@
     "outputType": "Library",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows": []
+      "privateWorkflows": [
+        "priv_ExpandListOfSchools.xaml"
+      ]
     },
     "processOptions": {
       "ignoredFiles": []
