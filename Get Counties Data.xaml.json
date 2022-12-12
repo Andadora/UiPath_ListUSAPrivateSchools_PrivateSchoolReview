@@ -6,8 +6,8 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "in_PrivateSchoolReviewStateUrl",
-      "DisplayName": "in_PrivateSchoolReviewStateUrl",
+      "Name": "in_StateUrl",
+      "DisplayName": "in_StateUrl",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

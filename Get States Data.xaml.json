@@ -6,8 +6,8 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "in_PrivateSchoolReviewHomeUrl",
-      "DisplayName": "in_PrivateSchoolReviewHomeUrl",
+      "Name": "in_HomeUrl",
+      "DisplayName": "in_HomeUrl",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
@@ -19,6 +19,17 @@
     {
       "Name": "out_dt_StatesData",
       "DisplayName": "out_dt_StatesData",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "io_BrowserWindow",
+      "DisplayName": "io_BrowserWindow",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

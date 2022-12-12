@@ -17,8 +17,8 @@
       "DataSourceItems": null
     },
     {
-      "Name": "in_PrivateSchoolReviewCountyUrl",
-      "DisplayName": "in_PrivateSchoolReviewCountyUrl",
+      "Name": "in_CountyUrl",
+      "DisplayName": "in_CountyUrl",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
