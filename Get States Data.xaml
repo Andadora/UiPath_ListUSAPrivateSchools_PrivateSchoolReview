@@ -6,7 +6,7 @@
   </x:Members>
   <sap2010:Annotation.AnnotationText>UPTF0000012CeyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiRXh0cmFjdHMgZGF0YXRhYmxlIG9mIDxTdGF0ZSBOYW1lLCBTdGF0ZSBVcmw+IGZyb20gaG9tZSBwYWdlIG9mIFByaXZhdGVTY2hvb2xSZXZpZXcgd2Vic2l0ZSBnaXZlbiB0aGUgdXJsIG9mIHRoZSBob21lIHBhZ2UuIiwiPFZlcnNpb24+a19fQmFja2luZ0ZpZWxkIjoxfQ==</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1031.2,3260</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031.2,1225.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -112,7 +112,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Extracts datatable of &lt;State Name, State Url&gt; from home page of PrivateSchoolReview website given the url of the home page." DisplayName="Get States Data" sap:VirtualizedContainerService.HintSize="640,3195.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Extracts datatable of &lt;State Name, State Url&gt; from home page of PrivateSchoolReview website given the url of the home page." DisplayName="Get States Data" sap:VirtualizedContainerService.HintSize="544,1160.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_StateDataColumn">
         <Variable.Default>
@@ -127,7 +127,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Assign out_dt_StatesData (initialization)" sap:VirtualizedContainerService.HintSize="577.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign out_dt_StatesData (initialization)" sap:VirtualizedContainerService.HintSize="481.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">out_dt_StatesData</CSharpReference>
@@ -139,27 +139,28 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <ui:BuildDataTable DisplayName="Build Output States Data dt" sap:VirtualizedContainerService.HintSize="577.6,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable DisplayName="Build Output States Data dt" sap:VirtualizedContainerService.HintSize="481.6,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <ui:BuildDataTable.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">out_dt_StatesData</CSharpReference>
         </OutArgument>
       </ui:BuildDataTable.DataTable>
     </ui:BuildDataTable>
-    <If DisplayName="check If browser window provided" sap:VirtualizedContainerService.HintSize="577.6,1112" sap2010:WorkflowViewState.IdRef="If_1">
+    <If DisplayName="check If browser window provided" sap:VirtualizedContainerService.HintSize="481.6,365.6" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">io_BrowserWindow==null</CSharpValue>
         </InArgument>
       </If.Condition>
       <If.Then>
-        <Sequence DisplayName="if browser not provided" sap:VirtualizedContainerService.HintSize="496,475.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence DisplayName="if browser not provided" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open new browser on Home Screen" sap:VirtualizedContainerService.HintSize="433.6,242.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Home Screen" sap:VirtualizedContainerService.HintSize="433.6,242.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -173,10 +174,10 @@
               </OutArgument>
             </uix:NApplicationCard.OutUiElement>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="1aulTMHVrE2le1UbQ8UEuQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="ead7bd877f167bfb02ba0ee47f6f5850.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/HCpbn71kIEiGEmVxBVn5kw" Selector="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;">
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="W4fqeLLptUq-8hDUrbO-yw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="ead7bd877f167bfb02ba0ee47f6f5850.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/HCpbn71kIEiGEmVxBVn5kw" Selector="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;">
                 <uix:TargetApp.Url>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">in_HomeUrl</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">in_HomeUrl</CSharpValue>
                   </InArgument>
                 </uix:TargetApp.Url>
               </uix:TargetApp>
@@ -197,10 +198,11 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="if browser provided" sap:VirtualizedContainerService.HintSize="496,471.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="if browser provided" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="navigate to url in  Provided Browser" sap:VirtualizedContainerService.HintSize="433.6,238.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
@@ -253,16 +255,17 @@
         </Sequence>
       </If.Else>
     </If>
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Extract states data" sap:VirtualizedContainerService.HintSize="577.6,1656.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Extract states data" sap:VirtualizedContainerService.HintSize="481.6,226.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Use Browser" sap:VirtualizedContainerService.HintSize="400,1510.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="extract and combine states data from 3 columns" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:BuildDataTable DisplayName="Build States Data Column dt" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
@@ -338,13 +341,6 @@
                 </InArgument>
               </ui:MergeDataTable.Source>
             </ui:MergeDataTable>
-            <ui:LogMessage DisplayName="Log Successful states data extraction" sap:VirtualizedContainerService.HintSize="337.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
-              <ui:LogMessage.Message>
-                <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"Successfully extracted urls of " + out_dt_StatesData.Rows.Count.ToString() + " States."</CSharpValue>
-                </InArgument>
-              </ui:LogMessage.Message>
-            </ui:LogMessage>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -358,11 +354,6 @@
           <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">io_BrowserWindow</CSharpValue>
         </InArgument>
       </uix:NApplicationCard.InUiElement>
-      <uix:NApplicationCard.OutUiElement>
-        <OutArgument x:TypeArguments="ui:UiElement">
-          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">io_BrowserWindow</CSharpReference>
-        </OutArgument>
-      </uix:NApplicationCard.OutUiElement>
       <uix:NApplicationCard.TargetApp>
         <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="ead7bd877f167bfb02ba0ee47f6f5850.jpg" />
       </uix:NApplicationCard.TargetApp>
@@ -373,5 +364,12 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Successful states data extraction" sap:VirtualizedContainerService.HintSize="481.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"Successfully extracted urls of " + out_dt_StatesData.Rows.Count.ToString() + " States."</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
   </Sequence>
 </Activity>
