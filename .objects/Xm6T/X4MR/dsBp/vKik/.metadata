@@ -9,5 +9,8 @@
   "CreatedBy": [
     "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
   ],
-  "Updated": "2022-12-11T14:09:29.7927069Z"
+  "Updated": "2022-12-15T22:02:16.2748322Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
 }

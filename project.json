@@ -34,7 +34,11 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": [
-        "priv_ExpandListOfSchools.xaml"
+        "priv_ExpandListOfSchools.xaml",
+        "priv_SplitLocationinfo.xaml",
+        "priv_ExtractPhoneNumber.xaml",
+        "priv_ExtractAddress.xaml",
+        "priv_ExtractZipCode.xaml"
       ]
     },
     "processOptions": {

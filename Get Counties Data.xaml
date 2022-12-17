@@ -154,7 +154,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="open new browser on State Screen" sap:VirtualizedContainerService.HintSize="433.6,242.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" OpenMode="IfNotOpen" ScopeGuid="71d2b247-054a-41c7-a98c-94700f205927" Version="V2">
+          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="open new browser on State Screen" sap:VirtualizedContainerService.HintSize="433.6,242.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="71d2b247-054a-41c7-a98c-94700f205927" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -162,11 +162,16 @@
                 </ActivityAction.Argument>
               </ActivityAction>
             </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OutUiElement>
+              <OutArgument x:TypeArguments="ui:UiElement">
+                <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">io_BrowserWindow</CSharpReference>
+              </OutArgument>
+            </uix:NApplicationCard.OutUiElement>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="CEFMYMNOeEm_pHdAznccXg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="00e2081b21f2392e110087447d41833b.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/8px1sTjA-UGWPNcfJsMF8w" Selector="&lt;html app='msedge.exe' /&gt;">
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="ktpC1a1HpkeoFW7LBwWGfg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="00e2081b21f2392e110087447d41833b.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/8px1sTjA-UGWPNcfJsMF8w" Selector="&lt;html app='msedge.exe' /&gt;">
                 <uix:TargetApp.Url>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">in_StateUrl</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">in_StateUrl</CSharpValue>
                   </InArgument>
                 </uix:TargetApp.Url>
               </uix:TargetApp>
@@ -194,7 +199,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="navigate to url in  Provided Browser" sap:VirtualizedContainerService.HintSize="433.6,238.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="navigate to state url in  Provided Browser" sap:VirtualizedContainerService.HintSize="433.6,238.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -244,7 +249,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Edge: Private School Review: State Screen" sap:VirtualizedContainerService.HintSize="481.6,313.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="a5cc94ea-5d2a-4f48-abef-f021db0aa7b7" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="State Screen" sap:VirtualizedContainerService.HintSize="577.6,313.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="a5cc94ea-5d2a-4f48-abef-f021db0aa7b7" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -262,27 +267,27 @@
           </uix:NExtractData>
         </ActivityAction>
       </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.CloseMode>
+        <InArgument x:TypeArguments="uix:NAppCloseMode">
+          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">CloseBrowser</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.CloseMode>
       <uix:NApplicationCard.InUiElement>
         <InArgument x:TypeArguments="ui:UiElement">
           <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">io_BrowserWindow</CSharpValue>
         </InArgument>
       </uix:NApplicationCard.InUiElement>
-      <uix:NApplicationCard.OutUiElement>
-        <OutArgument x:TypeArguments="ui:UiElement">
-          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">io_BrowserWindow</CSharpReference>
-        </OutArgument>
-      </uix:NApplicationCard.OutUiElement>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="Asa3GGwWIEOOCoNW5OeZbA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="00e2081b21f2392e110087447d41833b.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/8px1sTjA-UGWPNcfJsMF8w" Selector="&lt;html app='msedge.exe' title='Best Private Schools in Georgia (2022-23)' /&gt;">
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="ktpC1a1HpkeoFW7LBwWGfg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="00e2081b21f2392e110087447d41833b.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/8px1sTjA-UGWPNcfJsMF8w" Selector="&lt;html app='msedge.exe' /&gt;">
           <uix:TargetApp.Url>
             <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">in_StateUrl</CSharpValue>
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">in_StateUrl</CSharpValue>
             </InArgument>
           </uix:TargetApp.Url>
         </uix:TargetApp>
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Successful counties data extraction" sap:VirtualizedContainerService.HintSize="481.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+    <ui:LogMessage DisplayName="Log Successful counties data extraction" sap:VirtualizedContainerService.HintSize="577.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">"Successfully extracted urls of " + out_dt_CountiesData.Rows.Count.ToString() + " Counties."</CSharpValue>
