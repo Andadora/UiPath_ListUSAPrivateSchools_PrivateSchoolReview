@@ -120,7 +120,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Matches BuilderPattern=".+(?=, [A-Z]{2} [0-9]{5})" DisplayName="Find matches for Address" sap:VirtualizedContainerService.HintSize="482,69" sap2010:WorkflowViewState.IdRef="Matches_3" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;.+(?=, [A-Z]{2} [0-9]{5})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=".+(?=, [A-Z]{2} [0-9]{5})" RegexOption="IgnoreCase, Compiled">
+    <ui:Matches BuilderPattern="(.|\n)+(?=, [A-Z]{2} [0-9]{5})" DisplayName="Find matches for Address" sap:VirtualizedContainerService.HintSize="482,69" sap2010:WorkflowViewState.IdRef="Matches_3" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(.|\\n)+(?=, [A-Z]{2} [0-9]{5})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(.|\n)+(?=, [A-Z]{2} [0-9]{5})" RegexOption="Compiled">
       <ui:Matches.Input>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">in_LocationText</CSharpValue>
