@@ -164,12 +164,12 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_LocationText">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">SchoolRow["Location"].ToString()</CSharpValue>
                 </InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_ErrorMessage">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_49">SchoolErrorComment</CSharpReference>
-                </OutArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_Address">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">SchoolAddress</CSharpReference>
                 </OutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="io_ErrorMessage">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_50">SchoolErrorComment</CSharpReference>
+                </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtractZipCode" sap:VirtualizedContainerService.HintSize="431,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="priv_ExtractZipCode.xaml">
@@ -180,9 +180,9 @@
                 <OutArgument x:TypeArguments="x:String" x:Key="out_ZipCode">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">SchoolZipCode</CSharpReference>
                 </OutArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_ErrorMessage">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">SchoolErrorComment</CSharpReference>
-                </OutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="io_ErrorMessage">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_51">SchoolErrorComment</CSharpReference>
+                </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtractPhoneNumber" sap:VirtualizedContainerService.HintSize="431,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="priv_ExtractPhoneNumber.xaml">
@@ -190,12 +190,12 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_LocationText">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">SchoolRow["Location"].ToString()</CSharpValue>
                 </InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_ErrorMessage">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_43">SchoolErrorComment</CSharpReference>
-                </OutArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_PhoneNumber">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">SchoolPhoneNumber</CSharpReference>
                 </OutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="io_ErrorMessage">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_52">SchoolErrorComment</CSharpReference>
+                </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:MultipleAssign DisplayName="update school data row" sap:VirtualizedContainerService.HintSize="431,203" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">

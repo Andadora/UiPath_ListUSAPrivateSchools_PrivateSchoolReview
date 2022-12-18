@@ -1,5 +1,5 @@
 {
-  "DisplayName": "priv_ExtractAddress",
+  "DisplayName": "priv_ExtractPhoneNumber",
   "Tooltip": null,
   "HelpLink": null,
   "Color": null,
@@ -17,8 +17,8 @@
       "DataSourceItems": null
     },
     {
-      "Name": "out_Address",
-      "DisplayName": "out_Address",
+      "Name": "io_ErrorMessage",
+      "DisplayName": "io_ErrorMessage",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
@@ -28,8 +28,8 @@
       "DataSourceItems": null
     },
     {
-      "Name": "io_ErrorMessage",
-      "DisplayName": "io_ErrorMessage",
+      "Name": "out_PhoneNumber",
+      "DisplayName": "out_PhoneNumber",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
