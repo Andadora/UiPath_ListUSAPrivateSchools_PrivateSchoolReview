@@ -1,16 +1,17 @@
 {
   "name": "PrivateSchoolReviewEdge",
-  "description": "PrivateSchoolReview_Edge UI Library",
+  "description": "UI Library to provide actions that can be done on www.privateschoolreview.com website",
   "main": "NewActivity.xaml",
   "dependencies": {
     "UiPath.System.Activities": "[22.10.3]",
+    "UiPath.Testing.Activities": "22.12.0-preview",
     "UiPath.UIAutomation.Activities": "[22.10.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.10.3.0",
-  "projectVersion": "1.0.11",
+  "projectVersion": "1.0.13",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -44,7 +45,29 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ab1bb4c3-afca-462b-8ad5-bb1a0fd514a9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "GetStatesDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "53d69278-e9ae-4622-9201-a58fc45888ee",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "GetCountiesDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "edbc94ae-b385-418a-8a8c-5ff7f785b5f1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "GetSchoolsDataTestCase.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "CSharp",

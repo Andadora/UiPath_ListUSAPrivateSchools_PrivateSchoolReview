@@ -3,7 +3,7 @@
     <x:Property Name="in_CountyScreen" Type="InArgument(ui:UiElement)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1031,1583</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031.2,1612</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
@@ -102,35 +102,36 @@
       <AssemblyReference>System.Windows.Presentation</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Expand list of schools" sap:VirtualizedContainerService.HintSize="594,1518" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence sap2010:Annotation.AnnotationText="Expand list of schools visible in county page of PrivateSchoolReview website given the browser window." DisplayName="Expand list of schools" sap:VirtualizedContainerService.HintSize="594.4,1547.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="ShowMoreLabelExists" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log expanding list of schools Message" sap:VirtualizedContainerService.HintSize="532,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+    <ui:LogMessage DisplayName="Log expanding list of schools Message" sap:VirtualizedContainerService.HintSize="532,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"Expanding list of schools..."</CSharpValue>
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Edge: Private School Review: County Screen" sap:VirtualizedContainerService.HintSize="532,1255" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0d176364-d609-45d9-827e-6d42ab6e3e40" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Edge: Private School Review: County Screen" sap:VirtualizedContainerService.HintSize="532,1271.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0d176364-d609-45d9-827e-6d42ab6e3e40" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Expand list of schools if possible" sap:VirtualizedContainerService.HintSize="498,1109" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Expand list of schools if possible" sap:VirtualizedContainerService.HintSize="498.4,1134.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check show more label exists" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="436,256" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0d176364-d609-45d9-827e-6d42ab6e3e40" Timeout="3" Version="V3">
+            <uix:NCheckState DisplayName="Check show more label exists" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="436,290.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0d176364-d609-45d9-827e-6d42ab6e3e40" Timeout="3" Version="V3">
               <uix:NCheckState.Exists>
                 <OutArgument x:TypeArguments="x:Boolean">
                   <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ShowMoreLabelExists</CSharpReference>

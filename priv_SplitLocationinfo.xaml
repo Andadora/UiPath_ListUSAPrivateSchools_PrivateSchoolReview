@@ -4,7 +4,7 @@
   </x:Members>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1031,2674</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031.2,2696.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
@@ -100,48 +100,49 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Split Location info " sap:VirtualizedContainerService.HintSize="589,2609" sap2010:WorkflowViewState.IdRef="Sequence_15">
+  <Sequence sap2010:Annotation.AnnotationText="Splits information from Location column to columns Address, State (empty), Zip Code, Phone Number, Error Comment. after splitting deletes column Location.&#xD;&#xA;given schools data table &lt;Name, Location&gt;&#xD;&#xA;output schools data table &lt;Name, Address, State, Zip Code, Phone Number, Error Comment&gt;" DisplayName="Split Location info " sap:VirtualizedContainerService.HintSize="589.6,2632" sap2010:WorkflowViewState.IdRef="Sequence_15">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Address" DisplayName="Add Address Data Column" sap:VirtualizedContainerService.HintSize="527,195" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" MaxLength="500" Unique="False">
+    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Address" DisplayName="Add Address Data Column" sap:VirtualizedContainerService.HintSize="527.2,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" MaxLength="500" Unique="False">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">io_dt_SchoolsData</CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="State" DisplayName="Add State Data Column" sap:VirtualizedContainerService.HintSize="527,195" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7" MaxLength="500" Unique="False">
+    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="State" DisplayName="Add State Data Column" sap:VirtualizedContainerService.HintSize="527.2,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7" MaxLength="500" Unique="False">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">io_dt_SchoolsData</CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Zip Code" DisplayName="Add ZipCode Data Column" sap:VirtualizedContainerService.HintSize="527,195" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" MaxLength="500" Unique="False">
+    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Zip Code" DisplayName="Add ZipCode Data Column" sap:VirtualizedContainerService.HintSize="527.2,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" MaxLength="500" Unique="False">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">io_dt_SchoolsData</CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Phone Number" DisplayName="Add Phone Number Data Column" sap:VirtualizedContainerService.HintSize="527,195" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_9" MaxLength="500" Unique="False">
+    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Phone Number" DisplayName="Add Phone Number Data Column" sap:VirtualizedContainerService.HintSize="527.2,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_9" MaxLength="500" Unique="False">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">io_dt_SchoolsData</CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Error Comment" DisplayName="Add Error Comment Data Column" sap:VirtualizedContainerService.HintSize="527,195" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_10" MaxLength="500" Unique="False">
+    <ui:AddDataColumn x:TypeArguments="x:String" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Error Comment" DisplayName="Add Error Comment Data Column" sap:VirtualizedContainerService.HintSize="527.2,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_10" MaxLength="500" Unique="False">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">io_dt_SchoolsData</CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each School split address" sap:VirtualizedContainerService.HintSize="527,936" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each School split address" sap:VirtualizedContainerService.HintSize="527.2,928" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>

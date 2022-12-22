@@ -6,7 +6,7 @@
   </x:Members>
   <sap2010:Annotation.AnnotationText>UPTF0000012CeyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiRXh0cmFjdHMgZGF0YXRhYmxlIG9mIDxTdGF0ZSBOYW1lLCBTdGF0ZSBVcmw+IGZyb20gaG9tZSBwYWdlIG9mIFByaXZhdGVTY2hvb2xSZXZpZXcgd2Vic2l0ZSBnaXZlbiB0aGUgdXJsIG9mIHRoZSBob21lIHBhZ2UuIiwiPFZlcnNpb24+a19fQmFja2luZ0ZpZWxkIjoxfQ==</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1031.2,1225.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031.2,1029.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -112,14 +112,13 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Extracts datatable of &lt;State Name, State Url&gt; from home page of PrivateSchoolReview website given the url of the home page." DisplayName="Get States Data" sap:VirtualizedContainerService.HintSize="544,1160.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Extracts datatable of &lt;State Name, State Url&gt; from home page of PrivateSchoolReview website given the url of the home page." DisplayName="Get States Data" sap:VirtualizedContainerService.HintSize="558.4,964.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_StateDataColumn">
         <Variable.Default>
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">new System.Data.DataTable();</CSharpValue>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="uix:NAppCloseMode" Name="CloseBrowser" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -127,7 +126,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Assign out_dt_StatesData (initialization)" sap:VirtualizedContainerService.HintSize="481.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign out_dt_StatesData (initialization)" sap:VirtualizedContainerService.HintSize="496,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">out_dt_StatesData</CSharpReference>
@@ -139,216 +138,116 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <ui:BuildDataTable DisplayName="Build Output States Data dt" sap:VirtualizedContainerService.HintSize="481.6,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable DisplayName="Build Output States Data dt" sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <ui:BuildDataTable.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">out_dt_StatesData</CSharpReference>
         </OutArgument>
       </ui:BuildDataTable.DataTable>
     </ui:BuildDataTable>
-    <If DisplayName="check If browser window provided" sap:VirtualizedContainerService.HintSize="481.6,365.6" sap2010:WorkflowViewState.IdRef="If_1">
-      <If.Condition>
-        <InArgument x:TypeArguments="x:Boolean">
-          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">io_BrowserWindow==null</CSharpValue>
-        </InArgument>
-      </If.Condition>
-      <If.Then>
-        <Sequence DisplayName="if browser not provided" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_6">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Home Screen" sap:VirtualizedContainerService.HintSize="433.6,242.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
-            <uix:NApplicationCard.Body>
-              <ActivityAction x:TypeArguments="x:Object">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                </ActivityAction.Argument>
-              </ActivityAction>
-            </uix:NApplicationCard.Body>
-            <uix:NApplicationCard.OutUiElement>
-              <OutArgument x:TypeArguments="ui:UiElement">
-                <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">io_BrowserWindow</CSharpReference>
-              </OutArgument>
-            </uix:NApplicationCard.OutUiElement>
-            <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="W4fqeLLptUq-8hDUrbO-yw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="ead7bd877f167bfb02ba0ee47f6f5850.jpg" Reference="fSZ1Bla1BUSPYj84lfkH5w/HCpbn71kIEiGEmVxBVn5kw" Selector="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;">
-                <uix:TargetApp.Url>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">in_HomeUrl</CSharpValue>
-                  </InArgument>
-                </uix:TargetApp.Url>
-              </uix:TargetApp>
-            </uix:NApplicationCard.TargetApp>
-          </uix:NApplicationCard>
-          <Assign DisplayName="Assign close browser always" sap:VirtualizedContainerService.HintSize="433.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_2">
-            <Assign.To>
-              <OutArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpReference x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpReference`1_43">CloseBrowser</CSharpReference>
-              </OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">UiPath.UIAutomationNext.Enums.NAppCloseMode.Always</CSharpValue>
-              </InArgument>
-            </Assign.Value>
-          </Assign>
-        </Sequence>
-      </If.Then>
-      <If.Else>
-        <Sequence DisplayName="if browser provided" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_7">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="navigate to url in  Provided Browser" sap:VirtualizedContainerService.HintSize="433.6,238.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
-            <uix:NApplicationCard.Body>
-              <ActivityAction x:TypeArguments="x:Object">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                </ActivityAction.Argument>
-                <uix:NGoToUrl DisplayName="Go To URL: home screen" sap:VirtualizedContainerService.HintSize="333.6,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V3">
-                  <uix:NGoToUrl.Url>
-                    <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">in_HomeUrl</CSharpValue>
-                    </InArgument>
-                  </uix:NGoToUrl.Url>
-                </uix:NGoToUrl>
-              </ActivityAction>
-            </uix:NApplicationCard.Body>
-            <uix:NApplicationCard.InUiElement>
-              <InArgument x:TypeArguments="ui:UiElement">
-                <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">io_BrowserWindow</CSharpValue>
-              </InArgument>
-            </uix:NApplicationCard.InUiElement>
-            <uix:NApplicationCard.OutUiElement>
-              <OutArgument x:TypeArguments="ui:UiElement">
-                <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">io_BrowserWindow</CSharpReference>
-              </OutArgument>
-            </uix:NApplicationCard.OutUiElement>
-            <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVDhPhZJdSFNhGMcPGH1QVnRX06ybLookgsigC6GbIqeDTM2i9YEXeRURduFlUNs51XBzo7Ag8lgRZyZnc3OZhPtwy48l+DWNcrYWmh/NuTM2t+PT884zY0vwD7/zvuc57///fpyXIhJMZTsEk+IxwiPvNyJiUrQhb5AiasvDwZwqA7s92FZ1e54vDy3wF4AwL7XZ/EHQSEgit6j9jKM8n3F8KGDsXed03GylgYWLehaqDC1QgS3pV2KfUIFcNrwC57taiJrKSEAtCTiIWBDIY5ywj3aC4vUQcCOzoPUEobCxN1WT0a41mtl6iJlLVwOI0FyA2HAlcLihBz4HQpDW/U/fQaa2A5kgDZsdQIQfijDgNwnoDy5KdoAH3ZMbB2BxG6LLpx3iIY0LrhlHwPZ1Dl56f0Hx8/4MMyEjIJ9x5mCxDs3xQp0buOEZ0HsCcETrBnnzF+j6Ng9Kbhjy6H+ryAjA0z+BRZeMtk+ouieXxBWAZXxYJubANxtJbWMgGBaP6z1+nMSH48db2HofBoxiQDU1yN0sGjUqW8f5WmskFJxJObIkimLiR98L1xh3xexrVbbXNektpzTtptMa83kqYS7ZFTXJtVHb1aQYnpIs/ys+9BQEvoT8/5V7TY3TMnVPvIB2rh5ipO1srmCtbkhO9yak8ZlKxiHWp4IILwe8yiterubuXrVbdYB2KFIBROG3J3Nj/bRWXPRnhohxSPg7pgTrpQ7ccwIh11hJPBiwKWVOK9x8NDfmfaJbC8GZl/3Wn0LnDfmS8cxuND5DyOmnAtZVmD22MzbA6MSFsSSaA0Ln9VLpE4VGEqJBSqTS+lriivdE7XceCR9rKqTSmtC8Fdm8+kZRfwFGWW2f98MbzgAAAABJRU5ErkJggg==" InformativeScreenshot="ead7bd877f167bfb02ba0ee47f6f5850.jpg" />
-            </uix:NApplicationCard.TargetApp>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </uix:NApplicationCard>
-          <Assign DisplayName="Assign close browser never" sap:VirtualizedContainerService.HintSize="433.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_3">
-            <Assign.To>
-              <OutArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpReference x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpReference`1_44">CloseBrowser</CSharpReference>
-              </OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
-              </InArgument>
-            </Assign.Value>
-          </Assign>
-        </Sequence>
-      </If.Else>
-    </If>
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Extract states data" sap:VirtualizedContainerService.HintSize="481.6,226.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge browser" sap:VirtualizedContainerService.HintSize="496,454.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="extract and combine states data from 3 columns" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="in edge browser" sap:VirtualizedContainerService.HintSize="462.4,317.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BuildDataTable DisplayName="Build States Data Column dt" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
-              <ui:BuildDataTable.DataTable>
-                <OutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">dt_StateDataColumn</CSharpReference>
-                </OutArgument>
-              </ui:BuildDataTable.DataTable>
-            </ui:BuildDataTable>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract States Data from Column 1" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='State Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='State Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_8" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V3">
-              <uix:NExtractData.DataTable>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">dt_StateDataColumn</CSharpReference>
-                </InOutArgument>
-              </uix:NExtractData.DataTable>
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.privateschoolreview.com/" ContentHash="0kpkrCXK8U2slAumJpwf0g" DesignTimeRectangle="347, 265, 822, 3276" DesignTimeScaleFactor="1" FriendlyName="'Extract States Data from Column 1'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='main-content' tag='DIV' /&gt;" Guid="63601dca-ad39-46c4-be74-8d2f506ecea1" InformativeScreenshot="2cb3fa7f07c1605121748cce757dc201.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/Aq0ntn2ZyU2B_4uvodvsoA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-            <ui:MergeDataTable DisplayName="Merge Column 1 to output DT" sap:VirtualizedContainerService.HintSize="337.6,144" sap2010:WorkflowViewState.IdRef="MergeDataTable_7" MissingSchemaAction="Add">
-              <ui:MergeDataTable.Destination>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">out_dt_StatesData</CSharpReference>
-                </InOutArgument>
-              </ui:MergeDataTable.Destination>
-              <ui:MergeDataTable.Source>
-                <InArgument x:TypeArguments="sd:DataTable">
-                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">dt_StateDataColumn</CSharpValue>
+            <uix:NGoToUrl DisplayName="Go To URL: home screen" sap:VirtualizedContainerService.HintSize="400,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V3">
+              <uix:NGoToUrl.Url>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">in_HomeUrl</CSharpValue>
                 </InArgument>
-              </ui:MergeDataTable.Source>
-            </ui:MergeDataTable>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract States Data from Column 2" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='State Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='State Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_9" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V3">
-              <uix:NExtractData.DataTable>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">dt_StateDataColumn</CSharpReference>
-                </InOutArgument>
-              </uix:NExtractData.DataTable>
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.privateschoolreview.com/" ContentHash="uZR7pPIlD0-LbcLUrPyv1A" DesignTimeRectangle="347, 265, 822, 3276" DesignTimeScaleFactor="1" FriendlyName="'Extract States Data from Column 2'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='main-content' tag='DIV' /&gt;" Guid="6c467618-ea08-49dd-a93f-52d85c472645" InformativeScreenshot="718edc9e098cfb63675821757c060de9.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/54viNQvhdUOiUtkv5ye1ZQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-            <ui:MergeDataTable DisplayName="Merge Column 2 to output DT" sap:VirtualizedContainerService.HintSize="337.6,144" sap2010:WorkflowViewState.IdRef="MergeDataTable_8" MissingSchemaAction="Add">
-              <ui:MergeDataTable.Destination>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">out_dt_StatesData</CSharpReference>
-                </InOutArgument>
-              </ui:MergeDataTable.Destination>
-              <ui:MergeDataTable.Source>
-                <InArgument x:TypeArguments="sd:DataTable">
-                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">dt_StateDataColumn</CSharpValue>
-                </InArgument>
-              </ui:MergeDataTable.Source>
-            </ui:MergeDataTable>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract States Data from Column 3" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='State Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='State Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_10" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V3">
-              <uix:NExtractData.DataTable>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">dt_StateDataColumn</CSharpReference>
-                </InOutArgument>
-              </uix:NExtractData.DataTable>
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.privateschoolreview.com/" ContentHash="qlyJalZqAk2oCUhA2BFtjw" DesignTimeRectangle="347, 265, 822, 3276" DesignTimeScaleFactor="1" FriendlyName="'Extract States Data from Column 3'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='main-content' tag='DIV' /&gt;" Guid="772608a7-6ea7-4ca3-b5f9-3993d4f52e18" InformativeScreenshot="988e2328cfc96051d6ab7124b426381c.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/bSd4H_m0WkSr3SZa5HvXCQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-            <ui:MergeDataTable DisplayName="Merge Column 3 to output DT" sap:VirtualizedContainerService.HintSize="337.6,144" sap2010:WorkflowViewState.IdRef="MergeDataTable_9" MissingSchemaAction="Add">
-              <ui:MergeDataTable.Destination>
-                <InOutArgument x:TypeArguments="sd:DataTable">
-                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">out_dt_StatesData</CSharpReference>
-                </InOutArgument>
-              </ui:MergeDataTable.Destination>
-              <ui:MergeDataTable.Source>
-                <InArgument x:TypeArguments="sd:DataTable">
-                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">dt_StateDataColumn</CSharpValue>
-                </InArgument>
-              </ui:MergeDataTable.Source>
-            </ui:MergeDataTable>
+              </uix:NGoToUrl.Url>
+            </uix:NGoToUrl>
+            <Sequence DisplayName="extract and combine states data from 3 columns" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BuildDataTable DisplayName="Build States Data Column dt" sap:VirtualizedContainerService.HintSize="337.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;State_x0020_Url&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;500&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                <ui:BuildDataTable.DataTable>
+                  <OutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">dt_StateDataColumn</CSharpReference>
+                  </OutArgument>
+                </ui:BuildDataTable.DataTable>
+              </ui:BuildDataTable>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract States Data from Column 1" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='State Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='State Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_8" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V3">
+                <uix:NExtractData.DataTable>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">dt_StateDataColumn</CSharpReference>
+                  </InOutArgument>
+                </uix:NExtractData.DataTable>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.privateschoolreview.com/" ContentHash="0kpkrCXK8U2slAumJpwf0g" DesignTimeRectangle="347, 265, 822, 3276" DesignTimeScaleFactor="1" FriendlyName="'Extract States Data from Column 1'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='main-content' tag='DIV' /&gt;" Guid="63601dca-ad39-46c4-be74-8d2f506ecea1" InformativeScreenshot="2cb3fa7f07c1605121748cce757dc201.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/Aq0ntn2ZyU2B_4uvodvsoA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:MergeDataTable DisplayName="Merge Column 1 to output DT" sap:VirtualizedContainerService.HintSize="337.6,144" sap2010:WorkflowViewState.IdRef="MergeDataTable_7" MissingSchemaAction="Add">
+                <ui:MergeDataTable.Destination>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">out_dt_StatesData</CSharpReference>
+                  </InOutArgument>
+                </ui:MergeDataTable.Destination>
+                <ui:MergeDataTable.Source>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">dt_StateDataColumn</CSharpValue>
+                  </InArgument>
+                </ui:MergeDataTable.Source>
+              </ui:MergeDataTable>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract States Data from Column 2" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='State Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='State Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_9" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V3">
+                <uix:NExtractData.DataTable>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">dt_StateDataColumn</CSharpReference>
+                  </InOutArgument>
+                </uix:NExtractData.DataTable>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.privateschoolreview.com/" ContentHash="uZR7pPIlD0-LbcLUrPyv1A" DesignTimeRectangle="347, 265, 822, 3276" DesignTimeScaleFactor="1" FriendlyName="'Extract States Data from Column 2'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='main-content' tag='DIV' /&gt;" Guid="6c467618-ea08-49dd-a93f-52d85c472645" InformativeScreenshot="718edc9e098cfb63675821757c060de9.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/54viNQvhdUOiUtkv5ye1ZQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:MergeDataTable DisplayName="Merge Column 2 to output DT" sap:VirtualizedContainerService.HintSize="337.6,144" sap2010:WorkflowViewState.IdRef="MergeDataTable_8" MissingSchemaAction="Add">
+                <ui:MergeDataTable.Destination>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">out_dt_StatesData</CSharpReference>
+                  </InOutArgument>
+                </ui:MergeDataTable.Destination>
+                <ui:MergeDataTable.Source>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">dt_StateDataColumn</CSharpValue>
+                  </InArgument>
+                </ui:MergeDataTable.Source>
+              </ui:MergeDataTable>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract States Data from Column 3" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='State Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='State Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_10" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f4e5d280-bfdc-41a1-8d0f-10228421ff90" Version="V3">
+                <uix:NExtractData.DataTable>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">dt_StateDataColumn</CSharpReference>
+                  </InOutArgument>
+                </uix:NExtractData.DataTable>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.privateschoolreview.com/" ContentHash="qlyJalZqAk2oCUhA2BFtjw" DesignTimeRectangle="347, 265, 822, 3276" DesignTimeScaleFactor="1" FriendlyName="'Extract States Data from Column 3'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='main-content' tag='DIV' /&gt;" Guid="772608a7-6ea7-4ca3-b5f9-3993d4f52e18" InformativeScreenshot="988e2328cfc96051d6ab7124b426381c.png" Reference="fSZ1Bla1BUSPYj84lfkH5w/bSd4H_m0WkSr3SZa5HvXCQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Private School Review - Profiles of USA Private Schools' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:MergeDataTable DisplayName="Merge Column 3 to output DT" sap:VirtualizedContainerService.HintSize="337.6,144" sap2010:WorkflowViewState.IdRef="MergeDataTable_9" MissingSchemaAction="Add">
+                <ui:MergeDataTable.Destination>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">out_dt_StatesData</CSharpReference>
+                  </InOutArgument>
+                </ui:MergeDataTable.Destination>
+                <ui:MergeDataTable.Source>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">dt_StateDataColumn</CSharpValue>
+                  </InArgument>
+                </ui:MergeDataTable.Source>
+              </ui:MergeDataTable>
+            </Sequence>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.CloseMode>
-        <InArgument x:TypeArguments="uix:NAppCloseMode">
-          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">CloseBrowser</CSharpValue>
-        </InArgument>
-      </uix:NApplicationCard.CloseMode>
       <uix:NApplicationCard.InUiElement>
         <InArgument x:TypeArguments="ui:UiElement">
           <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">io_BrowserWindow</CSharpValue>
@@ -364,7 +263,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Successful states data extraction" sap:VirtualizedContainerService.HintSize="481.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+    <ui:LogMessage DisplayName="Log Successful states data extraction" sap:VirtualizedContainerService.HintSize="496,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"Successfully extracted urls of " + out_dt_StatesData.Rows.Count.ToString() + " States."</CSharpValue>
